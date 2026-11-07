@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production build
+build/
+dist/
+dist-ssr/
+
+# Testing & Coverage
+coverage/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+*.log
+
+# Environment variables & Local Secrets (Private keys / credentials)
+.env*
+!.env.example
+*.local
+
+# Backups and private exports
+*.backup.json
+backup-bel-sekolah-*.json
+*.private.*
+
+# Firebase & Deployment artifacts
+.firebase/
+.firebaserc

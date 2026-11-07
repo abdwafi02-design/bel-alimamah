@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+.font-mono-digital {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums lining-nums;
+  letter-spacing: -0.02em;
+}
+
+.font-display {
+  font-family: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(51, 65, 85, 0.8);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 1);
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.4), inset 0 0 15px rgba(37, 99, 235, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(37, 99, 235, 0.8), inset 0 0 25px rgba(37, 99, 235, 0.4);
+  }
+}
+
+@keyframes bellRingingRing {
+  0% { transform: rotate(0); }
+  10% { transform: rotate(18deg); }
+  20% { transform: rotate(-16deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-12deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(-8deg); }
+  70% { transform: rotate(6deg); }
+  80% { transform: rotate(-4deg); }
+  90% { transform: rotate(2deg); }
+  100% { transform: rotate(0); }
+}
+
+.animate-bell-ring {
+  animation: bellRingingRing 1.2s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+.glow-active {
+  animation: pulseGlow 2.5s infinite;
+}

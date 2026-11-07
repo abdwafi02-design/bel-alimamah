@@ -1,0 +1,6 @@
+{
+  "name": "Bel Sekolah Otomatis",
+  "description": "Aplikasi Bel Sekolah Otomatis offline-first untuk Chromebook Zyrex, Android, Windows, Linux, dan macOS dengan pengumuman narasi otomatis 4 bahasa (Indonesia, Inggris, Arab, Mandarin), integrasi Google Drive untuk sinkronisasi cadangan jadwal & impor audio bel, jadwal mingguan, jadwal khusus, mode kiosk, dan audio Web Audio API.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
